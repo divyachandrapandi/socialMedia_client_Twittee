@@ -7,14 +7,15 @@ import NotLike from "../../img/notlike.png";
 import { useSelector } from "react-redux";
 import { likePost } from "../../api/PostRequest";
 import defaultCover from "../../img/defaultCover.jpg";
-import profileImg from "../../img/profileImg.png";
+import profileImg from "../../img/profileImg.jpg";
 import postPic1 from "../../img/postpic1.jpg";
 import postPic2 from "../../img/postpic2.jpg";
-import postPic3 from "../../img/postpic3.jpg";
+import postPic3 from "../../img/postpic3.JPG";
 import postPic4 from "../../img/postPic4.jpg";
 import project1 from "../../img/project1.png";
 import project2 from "../../img/project2.png";
 import project3 from "../../img/project3.png";
+
 
 const Post = ({ data }) => {
   const { user } = useSelector((state) => state.authReducer.authData);
@@ -42,9 +43,10 @@ postPic4
     <div className="Post">
       <img
         src={
-          data.image
-            ? process.env.REACT_APP_PUBLIC_FOLDER + data.image
-            : randomPic[randomIndex]
+          // data.image
+          //   ? process.env.REACT_APP_PUBLIC_FOLDER + data.image
+          //   : 
+            randomPic[randomIndex]
         }
         alt=""
       />

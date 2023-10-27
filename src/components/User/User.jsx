@@ -2,10 +2,10 @@ import React , {useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { followUser, unFollowUser } from '../../actions/UserAction'
 
-import profileImg from "../../img/profileImg.png";
+import profileImg from "../../img/profileImg.jpg";
 import postPic1 from "../../img/postpic1.jpg";
 import postPic2 from "../../img/postpic2.jpg";
-import postPic3 from "../../img/postpic3.jpg";
+import postPic3 from "../../img/postpic3.JPG";
 import pic1 from "../../img/pic1.jpg";
 import pic2 from "../../img/pic2.jpg";
 import pic3 from "../../img/pic3.webp";
@@ -38,7 +38,10 @@ pic3
     return (
         <div className="follower">
             <div>
-                <img src={person?.profilePicture ? serverPublic + person.profilePicture :randomPic[randomIndex]} alt="" className='followerImage' />
+                <img src={
+                    // person?.profilePicture ? serverPublic + person.profilePicture :
+                    
+                    randomPic[randomIndex]} alt="" className='followerImage' />
                 <div className="name">
                     <span>{person.firstname}</span>
                     <span>@{person.username}</span>
