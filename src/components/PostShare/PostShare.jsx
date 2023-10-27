@@ -55,7 +55,7 @@ const PostShare = () => {
   }
   return (
     <div className="PostShare">
-      <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic+"defaultProfile.png"} alt="" />
+      <img src={user.profilePicture ? serverPublic + user.profilePicture : ProfileImage} alt="" />
       <div>
         <input ref={description} required={true} type="text" placeholder="What's happening" />
         <div className="postOptions">
